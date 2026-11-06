@@ -1,29 +1,25 @@
 package ejercicio2;
 
 public class Ingeniero extends Empleado {
-    private int horasExtras;
-    private double pagoPorHoraExtra;
+    private int he;
+    private double pagoHe;
 
-    public Ingeniero(String nombre, double salarioBase, int horasExtras, double pagoPorHoraExtra) {
-        super(nombre, salarioBase);
-        this.horasExtras = horasExtras;
-        this.pagoPorHoraExtra = pagoPorHoraExtra;
+    public Ingeniero(String nom, double base, int he, double pagoHe) {
+        super(nom, base);
+        this.he = he;
+        this.pagoHe = pagoHe;
     }
 
-    public int getHorasExtras() {
-        return horasExtras;
+    public int getHe() {
+        return he;
     }
 
-    public double getPagoPorHoraExtra() {
-        return pagoPorHoraExtra;
+    public double getPagoHe() {
+        return pagoHe;
     }
 
     @Override
     public double calcularSalario() {
-        return getSalarioBase() + (horasExtras * pagoPorHoraExtra);
-    }
-
-    public void desplegarCodigo() {
-        System.out.println("El ingeniero " + getNombre() + " esta desplegando codigo a produccion.");
+        return getBase() + (he * pagoHe);
     }
 }
