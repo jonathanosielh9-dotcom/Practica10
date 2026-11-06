@@ -1,23 +1,23 @@
 package ejercicio2;
 
 public class Empleado {
-    private String nombre;
-    private double salarioBase;
+    private String nom;
+    private double base;
 
-    public Empleado(String nombre, double salarioBase) {
-        this.nombre = nombre;
-        this.salarioBase = salarioBase;
+    public Empleado(String nom, double base) {
+        this.nom = nom;
+        this.base = base;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNom() {
+        return nom;
     }
 
-    public double getSalarioBase() {
-        return salarioBase;
+    public double getBase() {
+        return base;
     }
 
     public double calcularSalario() {
-        return salarioBase;
+        return base;
     }
 }
